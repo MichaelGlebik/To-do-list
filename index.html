@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <h1 class="text_err opacity">Заполните пожалуйста поля</h1>
+    <form class="railway">
+      <div class="stripes-block">
+        <div class="line"></div>
+      </div>
+      <h3>Информация о задаче</h3>
+      <div class="form-group">
+        <label for="name"> Задача</label>
+        <input type="text" id="name" />
+        <label for="pass"> Исполнитель</label>
+        <input type="text" id="pass" />
+
+        <select id="select">
+          <option hidden value="">Выберите статус задачи</option>
+          <option value="В процессе">В процессе</option>
+          <option value="Срочно">Срочно</option>
+          <option value="Срочно">Выполнено</option>
+        </select>
+      </div>
+      <div class="submit-block">
+        <div class="submit-button">
+          <i class="fa fa-train" aria-hidden="true"></i><br />
+          <input type="button" id="btnSend" value="Записать" />
+        </div>
+      </div>
+    </form>
+    <div class="cosntainer_task">
+      <ol class="list_task"></ol>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
